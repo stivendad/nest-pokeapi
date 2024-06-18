@@ -1,4 +1,4 @@
-# version: '3'
+version: '3'
 
 services:
   db:
@@ -7,7 +7,6 @@ services:
     ports:
       - 27017:27017
     environment:
-      MONGODB_DATABAS: nest-pokemon
+      MONGODB_DATABASE: nest-pokemon
     volumes:
       - ./mongo:/data/db
-
